@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+body{
+  background-color: rgb(12, 16, 20);
+}
+body header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+body header .username{
+  min-width: 40%;
+  min-height: 1.8rem;
+}
+body header .username h1{
+  font-size: 2.5rem;
+  min-width: 40%;
+  min-height: 1.8rem;
+  background: linear-gradient(to right, rgb(85, 85, 85) ,rgb(177, 176, 176));
+  background-size: 500%;
+  animation: loading 2s infinite forwards;
+}
+body body{
+  margin-top: 1.9rem;
+}
+.profileSection{
+  border: red solid;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainData{
+  display: flex;
+  align-items: center;
+  margin: 0 10px 0 10px;
+}
+.profilePicture{
+  height: 100px;
+  width: auto;
+  border-radius: 50% !important;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  background: linear-gradient(to right, rgb(85, 85, 85) ,rgb(177, 176, 176));
+  background-size: 500%;
+  animation: loading 2s infinite forwards;
+}
+.profileDataSection{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  margin-left: 15px;
+}
+.profileName{
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 60%;
+  height: 1.6rem;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, rgb(85, 85, 85) ,rgb(177, 176, 176));
+  background-size: 500%;
+  animation: loading 2s infinite forwards;
+}
+.socialData{
+  display: flex;
+  justify-content: space-between;
+}
+.socialData div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.socialData p{
+  font-size: 1.5rem;
+}
+.socialData div p:first-child{
+  background: linear-gradient(to right, rgb(85, 85, 85) ,rgb(177, 176, 176));
+  background-size: 500%;
+  animation: loading 2s infinite forwards;
+  width: 4rem;
+  height: 1.5rem;
+}
+.description{
+  border: yellow solid;
+  height: fit-content;
+}
+body body .username{
+  border: yellow solid;
+  height: 1.5rem;
+  align-self: flex-end;
+}
+
+
+
+
+/*loading skelaton animation
+background: linear-gradient(to right, rgb(85, 85, 85) ,rgb(177, 176, 176));
+  background-size: 500%;
+  animation: loading 2s infinite forwards;
+*/
+@keyframes loading {
+  0% {
+    background-position: 100%;
+    border-radius: 10px;
+  }
+  50%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 100%;
+    border-radius: 10px;
+  }
+}
