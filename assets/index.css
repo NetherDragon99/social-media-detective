@@ -82,7 +82,7 @@ body body{
   justify-content: center;
 }
 .socialData p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .socialData div p:first-child{
   background: linear-gradient(to right, rgb(85, 85, 85) ,rgb(177, 176, 176));
