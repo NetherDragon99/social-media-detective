@@ -6,8 +6,10 @@
 }
 body{
   background-color: rgb(12, 16, 20);
+  display: flex;
+  flex-direction: column;
 }
-body header{
+nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,20 +19,21 @@ body header{
   z-index: 100;
   margin-top: 5px;
 }
-body header .username{
-  min-width: 40%;
+nav .username{
+  min-width: 20%;
   min-height: 1.8rem;
 }
-body header .username h1{
+nav .username h1{
   font-size: 2.5rem;
   min-width: 40%;
   min-height: 1.8rem;
-  background: linear-gradient(to right,rgb(177, 176, 176),  rgb(85, 85, 85) ,rgb(177, 176, 176));
-  background-size: 500%;
-  animation: loading 2s infinite forwards;
 }
-body body{
+.body{
   margin-top: 1.9rem;
+  min-width: 100px;
+  width: 100%;
+  max-width: 700px;
+  align-self: center;
 }
 .profileSection{
   height: fit-content;
@@ -50,9 +53,6 @@ body body{
   border-radius: 50% !important;
   object-fit: cover;
   aspect-ratio: 1/1;
-  background: linear-gradient(to right,rgb(177, 176, 176),  rgb(85, 85, 85) ,rgb(177, 176, 176));
-  background-size: 500%;
-  animation: loading 2s infinite forwards;
 }
 .profileDataSection{
   display: flex;
@@ -67,9 +67,6 @@ body body{
   width: 60%;
   height: 1.1rem;
   margin-bottom: 10px;
-  background: linear-gradient(to right,rgb(177, 176, 176),  rgb(85, 85, 85) ,rgb(177, 176, 176));
-  background-size: 500%;
-  animation: loading 2s infinite forwards;
 }
 .socialData{
   display: flex;
@@ -85,9 +82,6 @@ body body{
   font-size: 1rem;
 }
 .socialData div p:first-child{
-  background: linear-gradient(to right,rgb(177, 176, 176),  rgb(85, 85, 85) ,rgb(177, 176, 176));
-  background-size: 500%;
-  animation: loading 2s infinite forwards;
   width: 2rem;
   height: 1rem;
   margin-bottom: 5px;
@@ -101,9 +95,6 @@ body body{
 .description div{
   width: 60%;
   height: .8rem;
-  background: linear-gradient(to right,rgb(177, 176, 176),  rgb(85, 85, 85) ,rgb(177, 176, 176));
-  background-size: 500%;
-  animation: loading 2s infinite forwards;
   margin: 5px 0;
 }
 .description div:last-child{
@@ -116,29 +107,24 @@ body body{
   margin-top: 5px;
   font-size: 1rem;
   margin-left: 5px;
-  background: linear-gradient(to right,rgb(177, 176, 176),  rgb(85, 85, 85) ,rgb(177, 176, 176));
-  background-size: 500%;
-  animation: loading 2s infinite forwards;
+  
 }
 
 
 
-/*loading skelaton animation
-background: linear-gradient(to right,rgb(177, 176, 176),  rgb(85, 85, 85) ,rgb(177, 176, 176));
+/*loading skelaton animation*/
+.skelatonLoading{
+  background: linear-gradient(to right,rgb(177, 176, 176),  rgb(85, 85, 85) ,rgb(177, 176, 176));
   background-size: 500%;
   animation: loading 2s infinite forwards;
-*/
+}
 @keyframes loading {
   0% {
-    background-position: 100%;
+    background-position: 0%;
     border-radius: 10px;
-  }
-95%{
-    
   }
   100% {
     border-radius: 10px;
-    background-position: 0%;
+    background-position: -120%;
   }
-  
 }
