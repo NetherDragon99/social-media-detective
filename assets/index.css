@@ -8,16 +8,17 @@ body{
   background-color: rgb(12, 16, 20);
   display: flex;
   flex-direction: column;
+  padding: 15px 0;
 }
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 15px;
   position: sticky;
   top: 0;
   z-index: 100;
   margin-top: 5px;
+  padding: 0 25px;
 }
 nav .username{
   min-width: 20%;
@@ -28,6 +29,9 @@ nav .username h1{
   min-width: 40%;
   min-height: 1.8rem;
 }
+.search{
+  cursor: pointer;
+}
 .body{
   margin-top: 1.9rem;
   min-width: 100px;
@@ -37,15 +41,15 @@ nav .username h1{
 }
 .profileSection{
   height: fit-content;
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 25px;
 }
 .mainData{
   display: flex;
   align-items: center;
-  margin: 0 10px 0 10px;
 }
 .profilePicture{
   height: 100px;
@@ -87,7 +91,7 @@ nav .username h1{
   margin-bottom: 5px;
 }
 .description{
-  margin: 5px 5px;
+  margin: 5px 0;
 }
 .description pre{
   line-height: 1.1rem;
@@ -106,9 +110,61 @@ nav .username h1{
   width: fit-content;
   margin-top: 5px;
   font-size: 1rem;
-  margin-left: 5px;
-  
 }
+
+
+.socialButtonsSection{
+  width: 100%;
+  display: flex;
+  padding: 0 25px;
+}
+.socialButtonsSection button{
+  height: 1.8rem;
+  flex: 1;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.followButton{
+  margin-right: 10px;
+  background-color: rgba(48, 144, 253, 0.788);
+}
+.messageButton{
+  background-color: rgba(61, 61, 73, 0.788);
+}
+
+.storySection{
+  margin-top: 15px;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  margin-left: 25px;
+}
+.story{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+.story div{
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: rgba(61, 61, 73, 0.788) solid;
+}
+.story div img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  background-color: rgba(61, 61, 73, 0.788);
+  border-radius: 50%;
+}
+
 
 
 
